@@ -10,7 +10,33 @@
 </head>
 
 <body class="page__body">
-<img src="img/electronic-main-block-desktop.png" alt="">
+  <header class="page-header">
+    <div class="page-header__top-wrapper">
+      <picture>
+        <source media="(max-width: 768px)" srcset="./img/logo-header-mobile.svg">
+        <img class="page-header__logo" src="./img/logo-header-desktop.svg" alt="Логотип компании «Smart Device»" width="202" height="52">
+      </picture>
+      <ul class="page-header__contacts header-contacts">
+        <li class="header-contacts__item">
+          <a class="header-contacts__link header-contacts__link--mail" href="mailto:info@sd.ru">
+            <svg class="header-contacts__icon header-contacts__icon--mail" width="19" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-mail"></use>
+            </svg>
+            <span class="header-contacts__text">info@sd.ru</span>
+          </a>
+        </li>
+        <li class="header-contacts__item">
+          <a class="header-contacts__link header-contacts__link--phone" href="tel:+74950005252">
+          <svg class="header-contacts__icon header-contacts__icon--phone" width="18" height="18">
+            <use xlink:href="img/sprite_auto.svg#icon-phone"></use>
+          </svg>
+            <span class="header-contacts__text">+7 (495) 000 52 52</span>
+          </a>
+        </li>
+      </ul>
+      <a class="page-header__back-call" href="#">Заказать звонок</a>
+    </div>
+  </header>
 </body>
 
 </html>
