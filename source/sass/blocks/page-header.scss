@@ -1,74 +1,68 @@
 .page-header {
-	min-height: 950px;
-	padding-top: 33px;
-	padding-left: 25px;
-	padding-right: 25px;
-	background-color: $main-block-background;
-	background-image: url(../../img/main-block-background-desktop.png);
+  min-height: 950px;
+  padding-right: 25px;
+  background-color: $second-accent;
+  background-image: url(../../img/main-block-background-desktop.png);
 
-	@media (max-width: $tablet-width) {
-		min-height: 686px;
-	}
+  @media (max-width: $tablet-width) {
+    min-height: 686px;
+  }
 
-	@media (max-width: $mobile-width) {
-		min-height: 661px;
-		padding-left: 16px;
-		padding-right: 16px;
-	}
+  @media (max-width: $mobile-width) {
+    min-height: 661px;
+  }
 }
 
-.page-header__top-wrapper {
-	display: flex;
-	align-items: center;
-	max-width: 1411px;
-	margin-left: auto;
-	margin-right: auto;
+.page-header__top {
+  display: flex;
+  align-items: center;
+  padding-top: 33px;
 }
 
 .page-header__logo {
-	display: block;
-	margin-right: auto;
+  display: block;
+  margin-right: auto;
 
-	@media (max-width: $mobile-width) {
-		width: 38px;
-		height: 38px;
-	}
+  @media (max-width: $mobile-width) {
+    width: 38px;
+    height: 38px;
+  }
 }
 
 .page-header__contacts {
-	margin: 0;
-	margin-right: 30px;
-	margin-left: auto;
+  margin: 0;
+  margin-right: 30px;
+  margin-left: auto;
 }
 
 .page-header__back-call {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 180px;
-	height: 45px;
-	border: 1px solid $white;
-	border-radius: 5px;
-	font-family: 'Roboto Condensed';
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 16px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 45px;
+  border: 1px solid $white;
+  border-radius: 5px;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $white;
 
-	&:focus,
-	&:hover {
-		color: $accent;
-		border-color: $accent;
-	}
+  &:focus,
+  &:hover {
+    color: $first-accent;
+    border-color: $first-accent;
+  }
 
-	&:active {
-		color: lighten($accent, 20%);
-		border-color: lighten($accent, 20%);
-	}
+  &:active {
+    color: lighten($first-accent, 20%);
+    border-color: lighten($first-accent, 20%);
+  }
 
-	@media (max-width: $tablet-width) {
-		display: none;
-	}
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }

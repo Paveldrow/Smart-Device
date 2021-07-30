@@ -1,78 +1,78 @@
 .header-contacts {
-	display: flex;
-	align-items: center;
-	list-style: none;
-	padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 0;
 }
 
 .header-contacts__item:not(:last-child) {
-	margin-right: 38px;
+  margin-right: 38px;
 
-	@media (max-width: $tablet-width) {
-		margin-right: 33px;
-	}
+  @media (max-width: $tablet-width) {
+    margin-right: 33px;
+  }
 
-	@media (max-width: $mobile-width) {
-		margin-right: 23px;
-	}
+  @media (max-width: $mobile-width) {
+    margin-right: 23px;
+  }
 }
 
 .header-contacts__link {
-	display: flex;
-	align-items: center;
-	font-family: 'PT Mono';
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 18px;
-	color: $white;
+  display: flex;
+  align-items: center;
+  font-family: 'PT Mono';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $white;
 
-	&:hover,
-	&:focus {
-		color: $accent;
-	}
+  &:hover,
+  &:focus {
+    color: $first-accent;
+  }
 
-	&:active {
-		color: lighten($accent, 20%);
-	}
+  &:active {
+    color: lighten($first-accent, 20%);
+  }
 }
 
 .header-contacts__link:hover .header-contacts__icon,
 .header-contacts__link:focus .header-contacts__icon {
-	@media (max-width: $tablet-width) {
-		fill: $white;
-	}
+  @media (max-width: $tablet-width) {
+    fill: $white;
+  }
 }
 
 .header-contacts__link:active .header-contacts__icon {
-	fill: lighten($accent, 30%);
+  fill: lighten($first-accent, 30%);
 }
 
 .header-contacts__icon {
-	fill: $accent;
+  fill: $first-accent;
 
-	&--mail {
-		margin-right: 20px;
+  &--mail {
+    margin-right: 20px;
 
-		@media (max-width: $tablet-width) {
-			width: 25px;
-			height: 19px;
-			margin-right: 0;
-		}
-	}
+    @media (max-width: $tablet-width) {
+      width: 25px;
+      height: 19px;
+      margin-right: 0;
+    }
+  }
 
-	&--phone {
-		margin-right: 16px;
+  &--phone {
+    margin-right: 16px;
 
-		@media (max-width: $tablet-width) {
-			width: 24px;
-			height: 24px;
-			margin-right: 0;
-		}
-	}
+    @media (max-width: $tablet-width) {
+      width: 24px;
+      height: 24px;
+      margin-right: 0;
+    }
+  }
 }
 
 .header-contacts__text {
-	@media (max-width: $tablet-width) {
-		display: none;
-	}
+  @media (max-width: $tablet-width) {
+    display: none;
+  }
 }
