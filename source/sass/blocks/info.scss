@@ -1,0 +1,58 @@
+.info {
+	max-width: 1170px;
+	min-height: 317px;
+	margin: 0 auto;
+	margin-bottom: 96px;
+	padding-left: 30px;
+	padding-right: 25px;
+	background-image: url(../../img/logo-year-desktop.png);
+	background-repeat: no-repeat;
+
+	@media (max-width: $mobile-width) {
+		background-image: none;
+	}
+}
+
+.info__wrapper {
+	padding-left: 200px;
+
+	@media (max-width: $mobile-width) {
+		padding-left: 0;
+	}
+}
+
+.info__title {
+	margin: 0;
+	margin-bottom: 18px;
+	font-family: 'Roboto Condensed';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 51px;
+	color: $middle-text;
+
+	@media (max-width: $tablet-width) {
+		font-size: 32px;
+		line-height: 45px;
+	}
+}
+
+.info__description {
+	margin: 0;
+	margin-bottom: 18px;
+	font-family: 'PT Mono';
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	color: $middle-text;
+}
+
+.info__button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 180px;
+	height: 45px;
+	border: 1px solid $first-accent;
+	border-radius: 5px;
+	color: $first-accent;
+}
