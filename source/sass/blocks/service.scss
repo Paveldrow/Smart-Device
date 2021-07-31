@@ -1,0 +1,119 @@
+.service {
+	background-color: $second-accent;
+}
+
+.service__wrapper {
+	max-width: 1170px;
+	margin: 0 auto;
+	padding-top: 93px;
+	padding-bottom: 127px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.service__block-title {
+	margin: 0;
+	margin-bottom: 47px;
+	font-family: 'Roboto Condensed';
+	font-weight: 400;
+	font-size: 36px;
+	line-height: 51px;
+	color: $white;
+}
+
+.service__list {
+	display: flex;
+	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	@media (max-width: 1220px) {
+		flex-direction: column;
+	}
+}
+
+.service__link {
+	position: relative;
+	display: block;
+	box-sizing: border-box;
+	width: 370px;
+	height: 620px;
+	padding-top: 53px;
+	padding-left: 44px;
+	padding-right: 44px;
+	background-repeat: no-repeat;
+	background-size: contain;
+
+	&::before {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		content: '';
+		width: 63px;
+		height: 63px;
+		background-color: $first-accent;
+		background-image: url(../../img/icon-arrow-menu.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+	@media (max-width: 1220px) {
+		width: 715px;
+		height: 256px;
+		margin: 0 auto;
+		margin-bottom: 46px;
+		padding-top: 43px;
+	}
+
+	@media (max-width: $mobile-width) {
+		width: 290px;
+		height: 256px;
+		margin-bottom: 30px;
+		padding-top: 23px;
+	}
+
+	&--production {
+		background-image: url(../../img/background-production-desktop.jpg);
+
+		@media (max-width: 1220px) {
+			background-image: url(../../img/background-production-tablet.jpg);
+		}
+
+		@media (max-width: $mobile-width) {
+			background-image: url(../../img/background-production-mobile.jpg);
+		}
+	}
+
+	&--installation {
+		background-image: url(../../img/background-installation-desktop.jpg);
+
+		@media (max-width: 1220px) {
+			background-image: url(../../img/background-installation-tablet.jpg);
+		}
+
+		@media (max-width: $mobile-width) {
+			background-image: url(../../img/background-production-mobile.jpg);
+		}
+	}
+
+	&--light {
+		background-image: url(../../img/background-light-desktop.jpg);
+
+		@media (max-width: 1220px) {
+			background-image: url(../../img/background-light-tablet.jpg);
+		}
+
+		@media (max-width: $mobile-width) {
+			background-image: url(../../img/background-production-mobile.jpg);
+		}
+	}
+}
+
+.service__title {
+	font-family: 'Roboto Condensed';
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 30px;
+	color: $white;
+}
