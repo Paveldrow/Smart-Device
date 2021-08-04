@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body">
+<body class="page__body page__body--no-js">
   <header class="page-header">
     <div class="page-header__top wrapper">
       <picture>
@@ -34,25 +34,25 @@
           </a>
         </li>
       </ul>
-      <a class="page-header__back-call" href="#">Заказать звонок</a>
+      <a class="page-header__back-call feedback-button-js" href="#">Заказать звонок</a>
     </div>
     <div class="main-block">
       <div class="wrapper">
         <div class="main-block__container">
           <p class="main-block__title">Печатные платы</p>
           <p class="main-block__description">Производство и монтаж, поставка комплектующих, блоков и модулей</p>
-          <a class="main-block__button" href="#">
+          <a class="main-block__button" href="#feedback">
             <span class="main-block__button-mobile">Бесплатная консультация</span>
             <span class="main-block__button-desktop">Получить бесплатную консультацию</span>
           </a>
-          <a href="#" class="main-block__link">Скролл вниз</a>
         </div>
       </div>
+      <a href="#features" class="main-block__link">Скролл вниз</a>
     </div>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Сайт компании Smart Device</h1>
-    <section class="page-main__featurs features">
+    <section class="page-main__featurs features" id="features">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="features__list">
         <li class="features__item features__item--time">
@@ -62,25 +62,25 @@
           <h3 class="features__title">Оперативные сроки</h3>
           <p class="features__description">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
         </li>
-        <li class="features__item">
+        <li class="features__item features__item--group">
           <svg class="features__icon" width="35" height="35">
             <use xlink:href="./img/sprite_auto.svg#icon-groups"></use>
           </svg>
           <h3 class="features__title">Крупные поставщики</h3>
           <p class="features__description">Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.</p>
         </li>
-        <li class="features__item">
-          <svg class="features__icon" width="36" height="31">
+        <li class="features__item features__item--confidentially ">
+          <svg class="features__icon features__icon--confidentially" width="36" height="31">
             <use xlink:href="./img/sprite_auto.svg#icon-confidentially"></use>
           </svg>
-          <h3 class="features__title">Полная конфиденциальность</h3>
+          <h3 class="features__title features__title--confidentially">Полная конфиденциальность</h3>
           <p class="features__description">По желанию клиента мы обеспечиваем полную конфеденциальность.</p>
         </li>
         <li class="features__item">
           <svg class="features__icon" width="35" height="35">
             <use xlink:href="./img/sprite_auto.svg#icon-personally"></use>
           </svg>
-          <h3 class="features__title">Персонализация стоимости</h3>
+          <h3 class="features__title features__title--personally">Персонализация стоимости</h3>
           <p class="features__description">Мы подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.</p>
         </li>
       </ul>
@@ -99,34 +99,50 @@
         <h2 class="visually-hidden">Товары и услуги</h2>
         <p class="service__block-title">Service Device предлагает следующие товары и услуги</p>
         <ul class="service__list">
-          <li class="service__item">
-            <a class="service__link service__link--production" href="#">
+          <li class="service__item service__item--production">
+            <a class="service__link" href="#">
               <h3 class="service__title">Производство печатных плат</h3>
             </a>
           </li>
-          <li class="service__item">
-            <a class="service__link service__link--installation" href="#">
-            <h3 class="service__title">Монтаж печатных плат</h3>
+          <li class="service__item service__item--installation">
+            <a class="service__link" href="#">
+              <h3 class="service__title">Монтаж печатных плат</h3>
             </a>
           </li>
-          <li class="service__item">
-            <a class="service__link service__link--light" href="#">
-            <h3 class="service__title">Комплектующие для светотехники</h3>
+          <li class="service__item service__item--light">
+            <a class="service__link" href="#">
+              <h3 class="service__title">Комплектующие для светотехники</h3>
             </a>
           </li>
         </ul>
       </div>
     </section>
+    <div class="feedback" id="feedback">
+      <div class="wrapper">
+        <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__title">Остались вопросы? Задайте их нам!</p>
+          <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
+          <input class="form__input" type="text" id="field-name" name="name" placeholder="Имя" required>
+          <input class="form__input" type="text" id="field-phone" name="phone" placeholder="Телефон" required>
+          <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос"></textarea>
+          <input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox" name="agreement" required tabindex="-1">
+          <label class="form__checkbox-container" for="field-checkbox" tabindex="0">
+            Я согласен на обработку персональных данных
+          </label>
+          <button class="form__button" type="submit">Задать вопрос</button>
+        </form>
+      </div>
+    </div>
   </main>
   <footer class="page-footer">
-    <div class="page-footer__top wrapper">
+    <div class="page-footer__top">
       <div class="page-footer__social">
         <img class="page-footer__logo" src="./img/logo-footer.svg" width="215" height="52" alt="Логотип компании «Smart Device»">
         <p class="page-footer__years">1999-2018 SD Service Devices</p>
-        <ul class="social-list">
+        <ul class="page-footer__social-list social-list">
           <li class="social-list__item">
             <a class="social-list__link" href="#">
-              <svg class="social-list__icon" width="27" height="27">
+              <svg class="social-list__icon" width="26" height="26">
                 <use xlink:href="./img/sprite_auto.svg#icon-fb"></use>
               </svg>
               <span class="visually-hidden">Facebook</span>
@@ -150,9 +166,9 @@
           </li>
         </ul>
       </div>
-      <nav class="page-footer__nav main-nav">
+      <nav class="page-footer__nav main-nav accordeon">
         <h2 class="main-nav__title">Разделы сайта</h2>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list accordeon__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Продукты</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Производство печатных плат</a></li>
@@ -162,23 +178,42 @@
           <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <div class="page-footer__contacts contacts">
+      <div class="page-footer__contacts contacts accordeon">
         <h2 class="contacts__title">Наш офис</h2>
-        <p class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</p>
-        <p class="contacts__item">+7 (495) 589-40-50</p>
-        <p class="contacts__item">+7 (925) 003-87-67</p>
-        <p class="contacts__item">+7 (926) 926-80-79</p>
+        <ul class="contacts__list accordeon__list">
+          <li class="contacts__item">г. Мытищи, Олимпийский проспект, д.10</li>
+          <li class="contacts__item"><a class="contacts__link" href="tel:+74955894050">+7 (495) 589-40-50</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="tel:+79250038767">+7 (925) 003-87-67</a></li>
+          <li class="contacts__item"><a class="contacts__link" href="tel:+79269268079">+7 (926) 926-80-79</a></li>
+        </ul>
       </div>
     </div>
     <div class="page-footer__bottom">
       <div class="copyright wrapper">
         <p class="copyright__item copyright__item--protection">Все права защищены</p>
         <p class="copyright__item copyright__item--years">1999-2018 SD Service Devices</p>
-        <p class="copyright__item">Условия конфиденциальности</p>
-        <p class="copyright__item">Developed by wow studio </p>
+        <p class="copyright__item"><a class="copyright__link">Условия конфиденциальности</a></p>
+        <p class="copyright__item"><a class="copyright__link">Developed by wow studio</a></p>
       </div>
     </div>
   </footer>
+
+  <div class="modal">
+    <form class="form form--modal" action="https://echo.htmlacademy.ru" method="POST">
+      <button class="modal__button-close" type="button"  tabindex="0"><span class="visually-hidden">Закрыть окно</span></button>
+      <p class="form__title">Закажите звонок</p>
+      <p class="form__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+      <input class="form__input form__input--name form__input--modal" type="text" name="name" placeholder="Имя" required>
+      <input class="form__input form__input--phone form__input--modal" type="text" name="phone" placeholder="Телефон" required>
+      <textarea class="form__input form__input--message form__input--textarea" name="questiond" placeholder="Ваш вопрос"></textarea>
+      <input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox-modal" name="agreement" required tabindex='-1'>
+      <label class="form__checkbox-container form__checkbox-container--modal" for="field-checkbox-modal" tabindex='0'>
+        Я согласен на обработку персональных данных
+      </label>
+      <button class="form__button form__button--modal" type="submit">Задать вопрос</button>
+    </form>
+  </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

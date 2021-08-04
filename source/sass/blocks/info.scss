@@ -2,19 +2,30 @@
 	max-width: 1170px;
 	min-height: 317px;
 	margin: 0 auto;
-	margin-bottom: 96px;
+	margin-bottom: 100px;
 	padding-left: 30px;
 	padding-right: 25px;
 	background-image: url(../../img/logo-year-desktop.png);
 	background-repeat: no-repeat;
+	background-position: -3px 4px;
+
+	@media (max-width: $tablet-width) {
+		background-image: url(../../img/logo-year-tablet.png);
+		background-position: 0 -2px;
+		margin-bottom: 73px;
+		padding-bottom: 10px;
+	}
 
 	@media (max-width: $mobile-width) {
 		background-image: none;
+		padding-right: 15px;
+		padding-left: 13px;
+    margin-bottom: 55px;
 	}
 }
 
 .info__wrapper {
-	padding-left: 200px;
+	padding-left: 178px;
 
 	@media (max-width: $mobile-width) {
 		padding-left: 0;
@@ -23,7 +34,7 @@
 
 .info__title {
 	margin: 0;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	font-family: 'Roboto Condensed';
 	font-weight: 400;
 	font-size: 36px;
@@ -31,28 +42,87 @@
 	color: $middle-text;
 
 	@media (max-width: $tablet-width) {
+		margin-left: 1px;
+		margin-bottom: 25px;
 		font-size: 32px;
 		line-height: 45px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-bottom: 23px;
+		font-size: 28px;
+		line-height: 39px;
 	}
 }
 
 .info__description {
 	margin: 0;
-	margin-bottom: 18px;
+	margin-bottom: 20px;
 	font-family: 'PT Mono';
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	color: $middle-text;
+
+	&:last-of-type {
+		margin-bottom: 39px;
+
+		@media (max-width: $tablet-width) {
+			height: 88px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom: 41px;
+		}
+
+		@media (max-width: $mobile-width) {
+			height: 174px;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			margin-bottom: 29px;
+		}
+	}
+
+	@media (max-width: $tablet-width) {
+		margin-left: 5px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-bottom: 40px;
+	}
 }
 
 .info__button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 180px;
-	height: 45px;
+	width: 177px;
+	height: 43px;
+	text-transform: uppercase;
 	border: 1px solid $first-accent;
 	border-radius: 5px;
+	font-family: 'Roboto Condensed';
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
 	color: $first-accent;
+
+  &:focus,
+	&:hover {
+		color: $white;
+		background-color: $first-accent;
+	}
+
+	&:active {
+		color: lighten($first-accent, 20%);
+		border-color: lighten($first-accent, 20%);
+	}
+
+	@media (max-width: $tablet-width) {
+		margin-left: 5px;
+	}
+
+	@media (max-width: $mobile-width) {
+		margin-left: 4px;
+	}
 }

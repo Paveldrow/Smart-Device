@@ -1,23 +1,26 @@
 .social-list {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
-.social-list__item:not(:last-child) {
-  margin-right: 16px;
+.social-list__item {
+	&:not(:last-child) {
+		margin-right: 17px;
+		margin-left: -1px;
+	}
 }
 
 .social-list__icon {
-  fill: $social-icon-fill;
+	fill: $social-icon-fill;
 
-  &:focus,
-  &:hover {
-    fill: $first-accent;
-  }
+	&:focus,
+	&:hover {
+		fill: $first-accent;
+	}
 
-  &:active {
-    fill: lighten($first-accent, 20%);
-  }
+	&:active {
+		fill: lighten($first-accent, 20%);
+	}
 }

@@ -3,10 +3,16 @@
   align-items: center;
   list-style: none;
   padding: 0;
+
+  @media (max-width: $tablet-width) {
+margin-right: -2px;
+align-items: flex-start;
+
+}
 }
 
 .header-contacts__item:not(:last-child) {
-  margin-right: 38px;
+  margin-right: 88px;
 
   @media (max-width: $tablet-width) {
     margin-right: 33px;

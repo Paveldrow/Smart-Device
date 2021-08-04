@@ -13,15 +13,15 @@
 .copyright__item {
   font-family: 'PT Mono';
   font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 13px;
+  line-height: 24px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $footer-text;
   margin: 0;
 
   &:nth-child(1n) {
-    margin-right: 59px;
+    margin-right: 74px;
 
     @media (max-width: $mobile-width) {
       margin: 0;
@@ -41,7 +41,12 @@
 
     @media (max-width: $mobile-width) {
       margin: 0;
+      margin-bottom: 20px;
     }
+  }
+
+  &:nth-child(4n) {
+    margin-right: 0;
   }
 
   @media (max-width: 1310px) {

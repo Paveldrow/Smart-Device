@@ -1,41 +1,67 @@
 .main-nav__title {
-  margin: 0;
-  margin-bottom: 25px;
-  font-family: "Roboto Condensed";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 16px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  color: $second-accent;
+	margin: 0;
+	margin-bottom: 25px;
+	font-family: "Roboto Condensed";
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 16px;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: $second-accent;
+
+	@media (max-width: $mobile-width) {
+		margin-bottom: 27px;
+	}
+
+  &:focus,
+	&:hover {
+		color: $first-accent;
+	}
+
+	&:active {
+		color: lighten($first-accent, 20%);
+	}
 }
 
 .main-nav__list {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: repeat(4, 1fr);
-  grid-auto-flow: column;
-  column-gap: 50px;
-  width: 516px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(4, 1fr);
+	grid-auto-flow: column;
+	column-gap: 50px;
+	width: 516px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 
-  @media (max-width: $tablet-width) {
-    display: block;
-    width: auto;
-  }
+	@media (max-width: $tablet-width) {
+		display: block;
+		width: auto;
+	}
+
+	@media (max-width: $mobile-width) {
+		padding-bottom: 27px;
+	}
 }
 
 .main-nav__item {
-  font-size: 15px;
-  line-height: 25px;
+	font-size: 15px;
+	line-height: 25px;
 }
 
 .main-nav__link {
-  font-family: "PT Mono";
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 25px;
-  color: $footer-text;
+	font-family: "PT Mono";
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 25px;
+	color: $footer-text;
+
+	&:focus,
+	&:hover {
+		color: $first-accent;
+	}
+
+	&:active {
+		color: lighten($first-accent, 20%);
+	}
 }

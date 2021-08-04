@@ -1,0 +1,36 @@
+.accordeon {
+	@media (max-width: $mobile-width) {
+		background-repeat: no-repeat;
+		background-image: url(../../img/icon-accordeon-closed.svg);
+		background-position: right 17px top 29px;
+		cursor: pointer;
+
+		&--open {
+			background-image: url(../../img/icon-accordeon-opened.svg);
+			background-position: right 17px top 36px;
+			cursor: pointer;
+		}
+	}
+}
+
+.accordeon .accordeon__list {
+	@media (max-width: $mobile-width) {
+		display: none;
+	}
+}
+
+.accordeon--open .accordeon__list {
+	@media (max-width: $mobile-width) {
+		display: block;
+	}
+}
+
+.page__body--no-js .accordeon {
+  background-image: none;
+}
+
+.page__body--no-js .accordeon__list {
+	@media (max-width: $mobile-width) {
+		display: block;
+	}
+}
