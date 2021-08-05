@@ -197,7 +197,7 @@
 
 .form__checkbox:checked + .form__checkbox-container {
 	&::before {
-		background-image: url(../../img/icon-checkbox-on.svg);
+		background-image: url(../img/icon-checkbox-on.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}

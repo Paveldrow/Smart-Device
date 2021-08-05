@@ -1,7 +1,7 @@
 .main-block {
 	position: relative;
 	min-height: 760px;
-	background-image: url(../../img/electronic-main-block-desktop.png);
+	background-image: url(../img/electronic-main-block-desktop.png);
 	background-repeat: no-repeat;
 	background-size: 713px 655px;
 	background-position: 1030px 0;
@@ -12,14 +12,14 @@
 
 	@media (max-width: $tablet-width) {
 		min-height: 613px;
-		background-image: url(../../img/electronic-main-block-tablet.png);
+		background-image: url(../img/electronic-main-block-tablet.png);
 		background-size: 536px 507px;
 		background-position: 434px -114px;
 	}
 
 	@media (max-width: $mobile-width) {
 		min-height: 592px;
-		background-image: url(../../img/electronic-main-block-mobile.png);
+		background-image: url(../img/electronic-main-block-mobile.png);
 		background-size: 631px 457px;
 		background-position: 26px -75px;
 	}

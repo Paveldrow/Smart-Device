@@ -1,16 +1,16 @@
 .page-header {
 	padding-top: 33px;
 	background-color: $second-accent;
-	background-image: url(../../img/main-block-background-desktop.png);
+	background-image: url(../img/main-block-background-desktop.png);
 	background-position: 0 -219px;
 
 	@media (max-width: $tablet-width) {
-		background-image: url(../../img/main-block-background-tablet.png);
+		background-image: url(../img/main-block-background-tablet.png);
 		padding-top: 20px;
 	}
 
 	@media (max-width: $mobile-width) {
-		background-image: url(../../img/main-block-background-mobile.png);
+		background-image: url(../img/main-block-background-mobile.png);
 		background-position: -624px -187px;
 		padding-top: 17px;
 	}

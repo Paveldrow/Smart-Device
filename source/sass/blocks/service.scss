@@ -86,40 +86,40 @@
 	}
 
 	&--production {
-		background-image: url(../../img/background-production-desktop.jpg);
+		background-image: url(../img/background-production-desktop.jpg);
 
 		@media (max-width: 1220px) {
-			background-image: url(../../img/background-production-tablet.jpg);
+			background-image: url(../img/background-production-tablet.jpg);
 		}
 
 		@media (max-width: $mobile-width) {
-			background-image: url(../../img/background-production-mobile.jpg);
+			background-image: url(../img/background-production-mobile.jpg);
 		}
 	}
 
 	&--installation {
-		background-image: url(../../img/background-installation-desktop.jpg);
+		background-image: url(../img/background-installation-desktop.jpg);
 
 		@media (max-width: 1220px) {
-			background-image: url(../../img/background-installation-tablet.jpg);
+			background-image: url(../img/background-installation-tablet.jpg);
 			background-size: 100% 101%;
 		}
 
 		@media (max-width: $mobile-width) {
-			background-image: url(../../img/background-production-mobile.jpg);
+			background-image: url(../img/background-production-mobile.jpg);
 		}
 	}
 
 	&--light {
-		background-image: url(../../img/background-light-desktop.jpg);
+		background-image: url(../img/background-light-desktop.jpg);
 
 		@media (max-width: 1220px) {
-			background-image: url(../../img/background-light-tablet.jpg);
+			background-image: url(../img/background-light-tablet.jpg);
 			background-size: 100% 101%;
 		}
 
 		@media (max-width: $mobile-width) {
-			background-image: url(../../img/background-production-mobile.jpg);
+			background-image: url(../img/background-production-mobile.jpg);
 		}
 	}
 }
@@ -147,7 +147,7 @@
 		width: 63px;
 		height: 63px;
 		background-color: $first-accent;
-		background-image: url(../../img/icon-arrow-menu.svg);
+		background-image: url(../img/icon-arrow-menu.svg);
 		background-repeat: no-repeat;
 		background-position: center;
 	}
