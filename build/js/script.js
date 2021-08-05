@@ -16,6 +16,8 @@ var validatePhone = function (element) {
   imPhone.mask(element);
 };
 
+validatePhone(phoneFeedback);
+
 const setLocalStorage = () => {
   localStorage.setItem('name', userName.value);
   localStorage.setItem('phone', phone.value);
@@ -34,8 +36,6 @@ const onPopupEscKeydown = (evt) => {
     closeModal();
   }
 };
-
-validatePhone(phoneFeedback);
 
 modal.addEventListener('click', (evt) => {
   if (evt.target === modal) {
@@ -67,7 +67,6 @@ feedbackButtonClose.addEventListener('click', () => {
 modalForm.addEventListener("submit", function (evt) {
   setLocalStorage();
 });
-
 
 
 for (let item of accordeons) {
