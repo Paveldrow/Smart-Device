@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./fonts/Roboto-Medium.woff2" as="font" rel="preload" crossorigin="anonymous">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Smart Device. Умные технологии</title>
   <link rel="stylesheet" href="css/style.min.css">
@@ -123,7 +124,7 @@
           <p class="form__title">Остались вопросы? Задайте их нам!</p>
           <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
           <input class="form__input" type="text" id="field-name" name="name" placeholder="Имя" required>
-          <input class="form__input" type="text" id="field-phone" name="phone" placeholder="Телефон" required>
+          <input class="form__input form__feedback--phone" type="text" id="field-phone" name="phone" placeholder="Телефон" required>
           <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос"></textarea>
           <input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox" name="agreement" required tabindex="-1">
           <label class="form__checkbox-container" for="field-checkbox" tabindex="0">
@@ -200,7 +201,7 @@
 
   <div class="modal">
     <form class="form form--modal" action="https://echo.htmlacademy.ru" method="POST">
-      <button class="modal__button-close" type="button"  tabindex="0"><span class="visually-hidden">Закрыть окно</span></button>
+      <button class="modal__button-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть окно</span></button>
       <p class="form__title">Закажите звонок</p>
       <p class="form__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
       <input class="form__input form__input--name form__input--modal" type="text" name="name" placeholder="Имя" required>
@@ -213,6 +214,7 @@
       <button class="form__button form__button--modal" type="submit">Задать вопрос</button>
     </form>
   </div>
+  <script src="js/vendor.js"></script>
   <script src="js/script.js"></script>
 </body>
 

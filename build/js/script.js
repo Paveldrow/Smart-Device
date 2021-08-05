@@ -7,8 +7,14 @@ const modal = document.querySelector('.modal');
 const modalForm = document.querySelector('.form--modal');
 const userName = document.querySelector('.form__input--name');
 const phone = document.querySelector('.form__input--phone');
+const phoneFeedback = document.querySelector('.form__feedback--phone');
 const message = document.querySelector('.form__input--message');
 const accordeons = document.querySelectorAll('.accordeon');
+
+var validatePhone = function (element) {
+  var imPhone = new Inputmask('+7 (999) 999-99-99');
+  imPhone.mask(element);
+};
 
 const setLocalStorage = () => {
   localStorage.setItem('name', userName.value);
@@ -29,6 +35,8 @@ const onPopupEscKeydown = (evt) => {
   }
 };
 
+validatePhone(phoneFeedback);
+
 modal.addEventListener('click', (evt) => {
   if (evt.target === modal) {
     modal.classList.remove('modal--show');
@@ -37,6 +45,7 @@ modal.addEventListener('click', (evt) => {
 
 const openModal = () => {
   modal.classList.add('modal--show');
+  validatePhone(phone);
   document.addEventListener('keydown', onPopupEscKeydown);
   getLocalStorage();
   userName.focus();

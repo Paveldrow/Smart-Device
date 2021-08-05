@@ -192,4 +192,13 @@
 	@media (max-width: $tablet-width) {
 		display: none;
 	}
+
+  &:focus,
+	&:hover {
+		color: $white;
+	}
+
+	&:active {
+		color: lighten($first-accent, 20%);
+	}
 }
