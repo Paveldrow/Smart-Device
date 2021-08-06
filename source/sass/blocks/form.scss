@@ -8,7 +8,7 @@
 
 	@media (max-width: $tablet-width) {
 		width: 590px;
-		margin-right: 0;
+		margin-right: auto;
 		padding-left: 7px;
 	}
 
@@ -42,7 +42,7 @@
 	margin: 0;
 	margin-bottom: 9px;
 	margin-left: -4px;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Condensed', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 51px;
@@ -66,7 +66,7 @@
 	width: 100%;
 	margin: 0;
 	margin-bottom: 51px;
-	font-family: 'PT Mono';
+	font-family: 'PT Mono', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
@@ -95,7 +95,7 @@
 	border: none;
 	background-color: $input-background;
 	outline: none;
-	font-family: 'PT Mono';
+	font-family: 'PT Mono', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
@@ -134,7 +134,7 @@
 			margin-bottom: 45px;
 		}
 
-		@media (max-width: $tablet-width) {
+		@media (max-width: $mobile-width) {
 			height: 100px;
 			margin-bottom: 31px;
 		}
@@ -142,13 +142,14 @@
 }
 
 .form__input::placeholder {
-	font-family: 'PT Mono';
+	font-family: 'PT Mono', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
 	color: $white;
 }
 
+.form__input:hover,
 .form__input:focus {
 	box-sizing: border-box;
 	box-shadow: 0 0 1px 1px $white;
@@ -212,7 +213,7 @@
 	margin-right: 38px;
 	border: 1px solid $white;
 	border-radius: 5px;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Condensed', "Arial", sans-serif;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 16px;

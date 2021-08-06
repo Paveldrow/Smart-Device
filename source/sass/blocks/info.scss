@@ -18,7 +18,7 @@
 
 	@media (max-width: $mobile-width) {
 		background-image: none;
-		padding-right: 15px;
+		padding-right: 13px;
 		padding-left: 13px;
     margin-bottom: 55px;
 	}
@@ -35,7 +35,7 @@
 .info__title {
 	margin: 0;
 	margin-bottom: 20px;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Condensed', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 36px;
 	line-height: 51px;
@@ -58,7 +58,7 @@
 .info__description {
 	margin: 0;
 	margin-bottom: 20px;
-	font-family: 'PT Mono';
+	font-family: 'PT Mono', "Arial", sans-serif;
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 22px;
@@ -100,7 +100,7 @@
 	text-transform: uppercase;
 	border: 1px solid $first-accent;
 	border-radius: 5px;
-	font-family: 'Roboto Condensed';
+	font-family: 'Roboto Condensed', "Arial", sans-serif;
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 16px;

@@ -1,5 +1,5 @@
 const page = document.querySelector('.page__body');
-page.classList.remove('.page__body--no-js');
+page.classList.remove('page__body--no-js');
 
 const feedbackButton = document.querySelector('.feedback-button-js');
 const feedbackButtonClose = document.querySelector('.modal__button-close');
