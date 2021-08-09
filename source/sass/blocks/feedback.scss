@@ -7,6 +7,12 @@
   background-position: 136px -67px;
   background-size: 36vw;
 
+  @media (max-width: 1350px) {
+    background-position: 25px 0;
+    background-size: 26vw;
+  }
+
+
   @media (max-width: $tablet-width) {
     padding-top: 80px;
     padding-bottom: 103px;

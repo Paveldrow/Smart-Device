@@ -125,7 +125,7 @@
           <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
           <input class="form__input" type="text" id="field-name" name="name" placeholder="Имя" required aria-label="Ввод имени">
           <input class="form__input form__input--phone-feedback" type="text" id="field-phone" name="phone" placeholder="Телефон" required aria-label="Ввод телефона">
-          <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+          <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос" required aria-label="Ваш вопрос"></textarea>
           <p class="form__wrapper"><input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox" name="agreement" required tabindex="-1" aria-label="Согласие на обработку данных">
             <label class="form__checkbox-container" for="field-checkbox" tabindex="0">
               Я согласен на обработку персональных данных
@@ -172,12 +172,12 @@
         <h2 class="main-nav__title">Разделы сайта</h2>
         <ul class="main-nav__list accordeon__list">
           <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Продукты</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Производство печатных плат</a></li>
-          <li class="main-nav__item"><a class="main-nav__link" href="#">Монтаж печатных плат</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Комплектующие</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Продукты</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Доставка</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Производство печатных плат</a></li>
           <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="#">Монтаж печатных плат</a></li>
         </ul>
       </nav>
       <div class="page-footer__contacts contacts accordeon">
@@ -205,8 +205,8 @@
       <p class="form__title form__title--modal">Закажите звонок</p>
       <p class="form__subtitle form__subtitle--modal">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
       <input class="form__input form__input--name form__input--modal" type="text" name="name" placeholder="Имя" required aria-label="Ввод имени">
-      <input class="form__input form__input--phone form__input--modal" type="text" name="phone" placeholder="Телефон" aria-label="Ввод телефона">
-      <textarea class="form__input form__input--message form__input--textarea form__input--textarea-modal" name="questiond" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+      <input class="form__input form__input--phone form__input--modal" type="text" name="phone" placeholder="Телефон" required aria-label="Ввод телефона">
+      <textarea class="form__input form__input--message form__input--textarea form__input--textarea-modal" name="questiond" placeholder="Ваш вопрос" required aria-label="Ваш вопрос"></textarea>
       <p class="form__wrapper form__wrapper--modal"><input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox-modal" name="agreement" required tabindex="-1" aria-label="Согласен на обработку данных">
         <label class="form__checkbox-container form__checkbox-container--modal" for="field-checkbox-modal" tabindex="0">
           Я согласен на обработку персональных данных

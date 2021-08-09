@@ -61,6 +61,7 @@
   }
 
   @media (max-width: $mobile-width) {
+    max-width: 300px;
     font-size: 40px;
     line-height: 47px;
     margin-left: -3px;
@@ -88,7 +89,7 @@
   }
 
   @media (max-width: $mobile-width) {
-    width: auto;
+    max-width: 245px;
     margin-bottom: 40px;
     padding-left: 47px;
     font-size: 16px;
@@ -152,9 +153,9 @@
 
   @media (max-width: $mobile-width) {
     box-sizing: border-box;
-    width: 100%;
+    width: 287px;
     margin-left: 0;
-    padding-left: 28px;
+    padding-left: 26px;
     padding-right: 28px;
   }
 }

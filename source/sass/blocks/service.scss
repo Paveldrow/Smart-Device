@@ -53,11 +53,12 @@
 .service__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin: 0;
   padding: 0;
   list-style: none;
 
-  @media (max-width: 1220px) {
+  @media (max-width: $tablet-width) {
     flex-direction: column;
   }
 }
@@ -69,13 +70,13 @@
   margin-right: 30px;
   margin-bottom: 30px;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 
   &:nth-child(3n) {
     margin-right: 0;
   }
 
-  @media (max-width: 1220px) {
+  @media (max-width: $tablet-width) {
     width: 715px;
     height: 256px;
     margin: 0 auto;
@@ -97,7 +98,7 @@
   &--production {
     background-image: url(../img/background-production-desktop.jpg);
 
-    @media (max-width: 1220px) {
+    @media (max-width: $tablet-width) {
       background-image: url(../img/background-production-tablet.jpg);
     }
 
@@ -110,10 +111,9 @@
   &--installation {
     background-image: url(../img/background-installation-desktop.jpg);
 
-    @media (max-width: 1220px) {
+    @media (max-width: $tablet-width) {
       background-image: url(../img/background-installation-tablet.jpg);
       background-size: cover;
-
     }
 
     @media (max-width: $mobile-width) {
@@ -125,7 +125,7 @@
   &--light {
     background-image: url(../img/background-light-desktop.jpg);
 
-    @media (max-width: 1220px) {
+    @media (max-width: $tablet-width) {
       background-image: url(../img/background-light-tablet.jpg);
       background-size: 100% 101%;
     }
@@ -164,7 +164,7 @@
     background-position: center;
   }
 
-  @media (max-width: 1220px) {
+  @media (max-width: $tablet-width) {
     padding-top: 41px;
   }
 
