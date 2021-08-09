@@ -4,7 +4,8 @@
 	background-color: $first-accent;
 	background-image: url(../img/background-feedback.png);
 	background-repeat: no-repeat;
-	background-position: right 1097px top -67px;
+	background-position: 136px -67px;
+  background-size: 36vw;
 
 	@media (max-width: $tablet-width) {
 		padding-top: 80px;
@@ -14,7 +15,7 @@
 
 	@media (max-width: $mobile-width) {
 		padding-top: 30px;
-		padding-bottom: 42px;
+		padding-bottom: 43px;
 	}
 }
 

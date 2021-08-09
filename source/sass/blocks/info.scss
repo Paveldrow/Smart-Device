@@ -1,10 +1,11 @@
 .info {
-	max-width: 1170px;
+  box-sizing: border-box;
+	max-width: 1230px;
 	min-height: 317px;
 	margin: 0 auto;
 	margin-bottom: 100px;
 	padding-left: 30px;
-	padding-right: 25px;
+	padding-right: 40px;
 	background-image: url(../img/logo-year-desktop.png);
 	background-repeat: no-repeat;
 	background-position: -3px 4px;
@@ -14,6 +15,7 @@
 		background-position: 0 -2px;
 		margin-bottom: 73px;
 		padding-bottom: 10px;
+    padding-right: 30px;
 	}
 
 	@media (max-width: $mobile-width) {

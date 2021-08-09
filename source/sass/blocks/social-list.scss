@@ -1,6 +1,8 @@
 .social-list {
 	display: flex;
+  flex-wrap: wrap;
 	list-style: none;
+  max-width: 216px;
 	margin: 0;
 	padding: 0;
 }

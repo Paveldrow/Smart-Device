@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
-<body class="page__body page__body--no-js">
+<body class="page__body page__body--no-js" focus="-1">
   <header class="page-header">
     <div class="page-header__top wrapper">
       <picture>
-        <source media="(max-width: 768px)" srcset="./img/logo-header-mobile.svg">
+        <source media="(max-width: 767px)" srcset="./img/logo-header-mobile.svg">
         <img class="page-header__logo" src="./img/logo-header-desktop.svg" alt="Логотип компании «Smart Device»" width="202" height="52">
       </picture>
       <ul class="page-header__contacts header-contacts">
@@ -123,13 +123,14 @@
         <form class="feedback__form form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="form__title">Остались вопросы? Задайте их нам!</p>
           <p class="form__subtitle">Мы проконсультируем Вас бесплатно</p>
-          <input class="form__input" type="text" id="field-name" name="name" placeholder="Имя" required="">
-          <input class="form__input form__feedback--phone" type="text" id="field-phone" name="phone" placeholder="Телефон" required="">
-          <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос"></textarea>
-          <input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox" name="agreement" required="" tabindex="-1">
-          <label class="form__checkbox-container" for="field-checkbox" tabindex="0">
-            Я согласен на обработку персональных данных
-          </label>
+          <input class="form__input" type="text" id="field-name" name="name" placeholder="Имя" required="" aria-label="Ввод имени">
+          <input class="form__input form__input--phone-feedback" type="text" id="field-phone" name="phone" placeholder="Телефон" required="" aria-label="Ввод телефона">
+          <textarea class="form__input form__input--textarea" id="field-textarea" name="questiond" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+          <p class="form__wrapper"><input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox" name="agreement" required="" tabindex="-1" aria-label="Согласие на обработку данных">
+            <label class="form__checkbox-container" for="field-checkbox" tabindex="0">
+              Я согласен на обработку персональных данных
+            </label>
+          </p>
           <button class="form__button" type="submit">Задать вопрос</button>
         </form>
       </div>
@@ -193,25 +194,27 @@
       <div class="copyright wrapper">
         <p class="copyright__item copyright__item--protection">Все права защищены</p>
         <p class="copyright__item copyright__item--years">1999-2018 SD Service Devices</p>
-        <p class="copyright__item"><a class="copyright__link">Условия конфиденциальности</a></p>
-        <p class="copyright__item"><a class="copyright__link">Developed by wow studio</a></p>
+        <p class="copyright__item"><a class="copyright__link" href="#">Условия конфиденциальности</a></p>
+        <p class="copyright__item"><a class="copyright__link" href="#">Developed by wow studio</a></p>
       </div>
     </div>
   </footer>
 
   <div class="modal">
     <form class="form form--modal" action="https://echo.htmlacademy.ru" method="POST">
-      <button class="modal__button-close" type="button" tabindex="0"><span class="visually-hidden">Закрыть окно</span></button>
-      <p class="form__title">Закажите звонок</p>
-      <p class="form__subtitle">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
-      <input class="form__input form__input--name form__input--modal" type="text" name="name" placeholder="Имя" required="">
-      <input class="form__input form__input--phone form__input--modal" type="text" name="phone" placeholder="Телефон" required="">
-      <textarea class="form__input form__input--message form__input--textarea" name="questiond" placeholder="Ваш вопрос"></textarea>
-      <input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox-modal" name="agreement" required="" tabindex="-1">
-      <label class="form__checkbox-container form__checkbox-container--modal" for="field-checkbox-modal" tabindex="0">
-        Я согласен на обработку персональных данных
-      </label>
-      <button class="form__button form__button--modal" type="submit">Задать вопрос</button>
+      <p class="form__title form__title--modal">Закажите звонок</p>
+      <p class="form__subtitle form__subtitle--modal">Оставьте контакты, мы проконсультируем вас&nbsp;бесплатно в удобное время</p>
+      <input class="form__input form__input--name form__input--modal" type="text" name="name" placeholder="Имя" required="" aria-label="Ввод имени">
+      <input class="form__input form__input--phone form__input--modal" type="text" name="phone" placeholder="Телефон" requiredaria-label="Ввод телефона">
+      <textarea class="form__input form__input--message form__input--textarea form__input--textarea-modal" name="questiond" placeholder="Ваш вопрос" aria-label="Ваш вопрос"></textarea>
+      <p class="form__wrapper form__wrapper--modal"><input class="form__checkbox visually-hidden" type="checkbox" id="field-checkbox-modal" name="agreement" required="" tabindex="-1" aria-label="Согласен на обработку данных">
+        <label class="form__checkbox-container form__checkbox-container--modal" for="field-checkbox-modal" tabindex="0">
+          Я согласен на обработку персональных данных
+        </label>
+      </p>
+      <button class="form__button form__button--modal" type="submit">Отправить</button>
+      <button class="modal__button-close" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+
     </form>
   </div>
   <script src="js/vendor.js"></script>

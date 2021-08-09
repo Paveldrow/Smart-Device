@@ -11,14 +11,14 @@
 	}
 
 	@media (max-width: $tablet-width) {
-		min-height: 613px;
+		min-height: 614px;
 		background-image: url(../img/electronic-main-block-tablet.png);
 		background-size: 536px 507px;
 		background-position: 434px -114px;
 	}
 
 	@media (max-width: $mobile-width) {
-		min-height: 592px;
+		min-height: 588px;
 		background-image: url(../img/electronic-main-block-mobile.png);
 		background-size: 631px 457px;
 		background-position: 26px -75px;
@@ -37,7 +37,7 @@
 
 	@media (max-width: $mobile-width) {
 		width: auto;
-		padding-top: 231px;
+		padding-top: 227px;
 		padding-left: 1px;
 	}
 }

@@ -16,4 +16,8 @@
   font-size: 16px;
   line-height: 22px;
   color: $black;
+
+  &--open-modal {
+    overflow-y: hidden;
+  }
 }
