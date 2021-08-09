@@ -1,21 +1,20 @@
 .feedback {
-	padding-top: 92px;
-	padding-bottom: 113px;
-	background-color: $first-accent;
-	background-image: url(../img/background-feedback.png);
-	background-repeat: no-repeat;
-	background-position: 136px -67px;
+  padding-top: 92px;
+  padding-bottom: 113px;
+  background-color: $first-accent;
+  background-image: url(../img/background-feedback.png);
+  background-repeat: no-repeat;
+  background-position: 136px -67px;
   background-size: 36vw;
 
-	@media (max-width: $tablet-width) {
-		padding-top: 80px;
-		padding-bottom: 103px;
-		background-image: none;
-	}
+  @media (max-width: $tablet-width) {
+    padding-top: 80px;
+    padding-bottom: 103px;
+    background-image: none;
+  }
 
-	@media (max-width: $mobile-width) {
-		padding-top: 30px;
-		padding-bottom: 43px;
-	}
+  @media (max-width: $mobile-width) {
+    padding-top: 30px;
+    padding-bottom: 43px;
+  }
 }
-

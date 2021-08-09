@@ -124,4 +124,3 @@ const accordeonsControl = function (accordeonsList) {
 }
 
 accordeonsControl(accordeons);
-

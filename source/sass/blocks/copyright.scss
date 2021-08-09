@@ -1,77 +1,77 @@
 .copyright {
-	display: flex;
-	max-width: 1411px;
-	margin-left: auto;
-	margin-right: auto;
+  display: flex;
+  max-width: 1411px;
+  margin-left: auto;
+  margin-right: auto;
 
-	@media (max-width: $mobile-width) {
-		flex-direction: column;
-		align-items: center;
-	}
+  @media (max-width: $mobile-width) {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .copyright__item {
-	font-family: 'PT Mono', "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 24px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: $footer-text;
-	margin: 0;
+  font-family: 'PT Mono', "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $footer-text;
+  margin: 0;
 
-	&:nth-child(1n) {
-		margin-right: 74px;
+  &:nth-child(1n) {
+    margin-right: 74px;
 
-		@media (max-width: $mobile-width) {
-			margin: 0;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      margin: 0;
+    }
+  }
 
-	&:nth-child(2n) {
-		margin-right: 142px;
+  &:nth-child(2n) {
+    margin-right: 142px;
 
-		@media (max-width: $mobile-width) {
-			margin: 0;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      margin: 0;
+    }
+  }
 
-	&:nth-child(3n) {
-		margin-right: auto;
+  &:nth-child(3n) {
+    margin-right: auto;
 
-		@media (max-width: $mobile-width) {
-			margin: 0;
-			margin-bottom: 20px;
-		}
-	}
+    @media (max-width: $mobile-width) {
+      margin: 0;
+      margin-bottom: 20px;
+    }
+  }
 
-	&:nth-child(4n) {
-		margin-right: 0;
-	}
+  &:nth-child(4n) {
+    margin-right: 0;
+  }
 
-	@media (max-width: 1310px) {
-		&--protection,
-		&--years {
-			display: none;
-		}
-	}
+  @media (max-width: 1310px) {
+    &--protection,
+    &--years {
+      display: none;
+    }
+  }
 }
 
 .copyright__link {
   font-family: 'PT Mono', "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 13px;
-	line-height: 24px;
-	letter-spacing: 0.04em;
-	text-transform: uppercase;
-	color: $footer-text;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $footer-text;
 
-	&:focus,
-	&:hover {
-		color: $first-accent;
-	}
+  &:focus,
+  &:hover {
+    color: $first-accent;
+  }
 
-	&:active {
-		color: lighten($first-accent, 20%);
-	}
+  &:active {
+    color: lighten($first-accent, 20%);
+  }
 }

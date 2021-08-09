@@ -1,61 +1,61 @@
 .contacts__title {
-	margin: 0;
-	margin-bottom: 25px;
-	font-family: 'Roboto Condensed', "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 16px;
-	letter-spacing: 0.05em;
-	text-transform: uppercase;
-	color: $second-accent;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: 'Roboto Condensed', "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $second-accent;
 
-	@media (max-width: $mobile-width) {
-		margin-bottom: 31px;
-	}
+  @media (max-width: $mobile-width) {
+    margin-bottom: 31px;
+  }
 
   &:focus,
-	&:hover {
-		color: $first-accent;
-	}
+  &:hover {
+    color: $first-accent;
+  }
 
-	&:active {
-		color: lighten($first-accent, 20%);
-	}
+  &:active {
+    color: lighten($first-accent, 20%);
+  }
 }
 
 .contacts__list {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 
-	@media (max-width: $mobile-width) {
-		padding-bottom: 27px;
-	}
+  @media (max-width: $mobile-width) {
+    padding-bottom: 27px;
+  }
 }
 
 .contacts__item {
-	margin: 0;
-	font-family: 'PT Mono', "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 25px;
-	color: $footer-text;
+  margin: 0;
+  font-family: 'PT Mono', "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: $footer-text;
 }
 
 .contacts__link {
-	margin: 0;
-	font-family: 'PT Mono', "Arial", sans-serif;
-	font-weight: 400;
-	font-size: 15px;
-	line-height: 25px;
-	color: $footer-text;
+  margin: 0;
+  font-family: 'PT Mono', "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: $footer-text;
 
   &:focus,
-	&:hover {
-		color: $first-accent;
-	}
+  &:hover {
+    color: $first-accent;
+  }
 
-	&:active {
-		color: lighten($first-accent, 20%);
-	}
+  &:active {
+    color: lighten($first-accent, 20%);
+  }
 }

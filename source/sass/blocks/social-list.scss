@@ -1,28 +1,28 @@
 .social-list {
-	display: flex;
+  display: flex;
   flex-wrap: wrap;
-	list-style: none;
+  list-style: none;
   max-width: 216px;
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .social-list__item {
-	&:not(:last-child) {
-		margin-right: 17px;
-		margin-left: -1px;
-	}
+  &:not(:last-child) {
+    margin-right: 17px;
+    margin-left: -1px;
+  }
 }
 
 .social-list__icon {
-	fill: $social-icon-fill;
+  fill: $social-icon-fill;
 
-	&:focus,
-	&:hover {
-		fill: $first-accent;
-	}
+  &:focus,
+  &:hover {
+    fill: $first-accent;
+  }
 
-	&:active {
-		fill: lighten($first-accent, 20%);
-	}
+  &:active {
+    fill: lighten($first-accent, 20%);
+  }
 }
